@@ -844,18 +844,21 @@ textarea::placeholder {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*CSSy dla Portfolio*/
-.project-wrapper {
+.project {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 94px;
   list-style-type: none;
 }
-.project {
+.project__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+}
+.borders {
+  border: 1px solid #eeeeee;
 }
 .card-hover {
   transition: box-shadow;
@@ -866,7 +869,7 @@ textarea::placeholder {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.project__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -884,10 +887,10 @@ textarea::placeholder {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-hover:hover .overlay {
+.card-hover:hover .project__overlay {
   transform: translateY(0);
 }
-.overlay-text {
+.project__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -896,10 +899,10 @@ textarea::placeholder {
   margin: auto;
   width: 301px;
 }
-.item {
+.project__item {
   flex-basis: calc((100%-60px) / 3);
 }
-.type {
+.project__type {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -913,9 +916,7 @@ textarea::placeholder {
   width: 370px;
   padding-bottom: 20px;
 }
-.borders {
-  border: 1px solid #eeeeee;
-}
+
 .mail--underline {
   font-weight: 400;
   font-size: 14px;
