@@ -431,12 +431,13 @@ textarea::placeholder {
 .no-padding {
   padding-bottom: 0px;
 }
-.strengths-wrapper {
+.strengths {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  list-style-type: none;
 }
-.svg-backgroud {
+.strengths__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -445,7 +446,7 @@ textarea::placeholder {
   margin-bottom: 30px;
   padding: 25px 100px 25px 100px;
 }
-.svg-strengths {
+.strengths__icon {
   display: flex;
   align-items: center;
   fill: var(--filters-color);
@@ -453,14 +454,14 @@ textarea::placeholder {
   width: 70px;
   height: 70px;
 }
-.feature {
+.strengths__feature {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-.description {
+.strengths__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
