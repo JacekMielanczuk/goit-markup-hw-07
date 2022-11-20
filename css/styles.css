@@ -601,8 +601,9 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  list-style-type: none;
 }
-.client {
+.client-list__client {
   border: 1px solid #afb1b8;
   border-radius: 4%;
   width: 170px;
@@ -613,8 +614,8 @@ textarea::placeholder {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client:hover,
-.client:focus {
+.client-list__client:hover,
+.client-list__client:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
