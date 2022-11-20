@@ -910,7 +910,7 @@ textarea::placeholder {
 .borders {
   border: 1px solid #eeeeee;
 }
-.mail2 {
+.mail--underline {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
