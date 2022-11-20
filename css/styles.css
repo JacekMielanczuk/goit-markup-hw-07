@@ -514,12 +514,10 @@ textarea::placeholder {
   color: var(--title-color);
 }
 /*CSSy dla Nasz zespół*/
-.members-background {
+.section-background {
   background-color: var(--filters-color);
 }
-.members {
-  height: 648px;
-}
+
 .margins {
   margin: 30px 0px 0px 0px;
 }
@@ -531,13 +529,14 @@ textarea::placeholder {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-wrapper {
+.members {
   display: flex;
   justify-content: space-around;
   padding-left: 0px;
   margin-bottom: 0px;
+  list-style-type: none;
 }
-.team {
+.members__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -552,7 +551,7 @@ textarea::placeholder {
   gap: 10px;
   border-radius: 0px 0px 4px 4px;
 }
-.name {
+.members__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -567,26 +566,27 @@ textarea::placeholder {
   justify-content: space-between;
   padding-left: 32px;
   padding-right: 32px;
+  list-style-type: none;
 }
-.social-list-link {
-  display: flex;
+.social-list__link {
+  /* display: flex;
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   transition: fill background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list-link:hover .social-links,
-.social-list-link:focus .social-links,
-.social-list-link:active .social-links {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon,
+.social-list__link:active .social-list__icon {
   fill: var(--title-color);
   background-color: var(--accent-color);
 }
-.social-links {
+.social-list__icon {
   width: 44px;
   height: 44px;
   fill: #afb1b8;
