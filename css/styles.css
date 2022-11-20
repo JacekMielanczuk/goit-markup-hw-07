@@ -805,7 +805,7 @@ textarea::placeholder {
   padding-right: 0px;
 }
 
-.icon-send {
+.button__icon-send {
   width: 24px;
   height: 24px;
 }
