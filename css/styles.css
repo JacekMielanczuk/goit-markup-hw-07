@@ -27,7 +27,7 @@ body {
 }
 .link:hover,
 .link:focus,
-link:active {
+.link:active {
   color: var(--accent-color);
 }
 .container {
@@ -38,22 +38,12 @@ link:active {
 .section {
   padding-block: 94px;
 }
-/* CSSy dla Nawigacji*/
+/* CSS do logo */
 .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
-}
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.contact-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -63,8 +53,19 @@ link:active {
   letter-spacing: 0.03em;
   width: 145px;
 }
-.web {
+.logo__web {
   color: var(--accent-color);
+}
+/* CSSy dla Nawigacji*/
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
 .navi {
   font-weight: 500;
