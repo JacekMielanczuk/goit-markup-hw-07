@@ -155,11 +155,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*CSSy dla Hero*/
-.list {
-  list-style-type: none;
-}
-.title {
+/*CSSy dla Slider*/
+
+.slider__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -168,7 +166,7 @@ body {
   width: 696px;
   text-align: center;
 }
-.order {
+.slider__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -182,7 +180,7 @@ body {
   height: 50px;
   border: 0;
 }
-.title-background {
+.slider {
   background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -193,7 +191,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.title-wrapper {
+.slider__wrapper {
   height: 600px;
   display: flex;
   justify-content: center;
@@ -201,6 +199,7 @@ body {
   align-items: center;
 }
 /* CSSy dla Modala */
+
 .backdrop {
   position: fixed;
   display: flex;
@@ -426,6 +425,9 @@ textarea::placeholder {
   cursor: pointer;
 }
 /*CSSy dla Nasze atuty*/
+.list {
+  list-style-type: none;
+}
 .no-padding {
   padding-bottom: 0px;
 }
