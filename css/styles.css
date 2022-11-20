@@ -6,6 +6,8 @@
   --filters-color: #f5f4fa;
   --background-social: rgba(255, 255, 255, 0.1);
   --client-color: #afb1b8;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -54,7 +56,7 @@ link:active {
   gap: 50px;
 }
 .logo {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -596,7 +598,7 @@ textarea::placeholder {
   flex-direction: column;
 }
 .logo2 {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
