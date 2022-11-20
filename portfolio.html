@@ -13,32 +13,35 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Nawigacja-->
-    <header>
-      <div class="header-wrapper container">
+    <!--Logo-->
+    <header class="container">
+      <div class="header-wrapper">
         <div class="header-wrapper">
-          <a class="link logo" href="index.html"
-            ><span class="web">Web</span><span>Studio</span></a
+          <a class="logo" href="index.html"
+            ><span class="logo__web">Web</span><span>Studio</span></a
           >
+          <!-- Nawigacja -->
           <nav>
-            <ul class="list nav-wrapper">
+            <ul class="navigation">
               <li>
-                <a class="link navi" href="index.html">Agencja</a>
+                <a class="navigation__link" href="index.html">Agencja</a>
               </li>
               <li>
-                <a class="link navi underliner" href="portfolio.html"
+                <a
+                  class="navigation__link navigation__underliner"
+                  href="portfolio.html"
                   >Portfolio</a
                 >
               </li>
               <li>
-                <a class="link navi" href="#">Kontakty</a>
+                <a class="navigation__link" href="#">Kontakty</a>
               </li>
             </ul>
           </nav>
         </div>
-        <ul class="list contact-wrapper">
+        <ul class="contact">
           <li>
-            <a class="link contact" href="mailto:info@devstudio.com">
+            <a class="contact__link" href="mailto:info@devstudio.com">
               <svg class="envelope">
                 <use href="./images/icons.svg#icon-envelope1"></use>
               </svg>
@@ -46,7 +49,7 @@
             </a>
           </li>
           <li>
-            <a class="link contact" href="tel:+48111111111">
+            <a class="contact__link" href="tel:+48111111111">
               <svg class="phone">
                 <use href="./images/icons.svg#icon-smartphone1"></use>
               </svg>
