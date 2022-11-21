@@ -774,7 +774,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .newsletter__fieldset {
   display: flex;
   align-items: center;
@@ -791,11 +790,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .newsletter__fieldset:has(input:focus) {
   border-color: var(--accent-color);
 }
-
 .newsletter__input {
   display: flex;
   border: 0;
@@ -804,7 +801,6 @@ body {
   width: 342px;
   color: var(--title-color);
 }
-
 .newsletter__input::placeholder {
   font-weight: 400;
   font-size: 16px;
