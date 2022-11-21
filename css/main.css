@@ -70,6 +70,21 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.borders {
+  border: 1px solid #eeeeee;
+}
+
+.card-hover {
+  transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cover {
+  position: relative;
+  overflow: hidden;
+}
+
 .backdrop {
   position: fixed;
   display: flex;
@@ -928,21 +943,6 @@ textarea::placeholder {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
-}
-
-.borders {
-  border: 1px solid #eeeeee;
-}
-
-.card-hover {
-  transition: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cover {
-  position: relative;
-  overflow: hidden;
 }
 
 .project__overlay {
