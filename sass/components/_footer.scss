@@ -24,11 +24,12 @@
   transition: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-logo:hover,
-.footer-logo:focus,
-.footer-logo:active {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
 }
 .adress-wrapper {
   display: flex;
@@ -56,17 +57,18 @@
   transition: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mail:hover,
-.mail:focus,
-.mail:active {
-  color: var(--accent-color);
-}
-.mail--underline {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+  &--underline {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
