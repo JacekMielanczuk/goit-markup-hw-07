@@ -25,30 +25,32 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 0;
   list-style-type: none;
-}
-.social-footer__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--title-color);
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-.social-footer__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  --color5: var(--background-social);
-  --color4: var(--title-color);
-  transition: fill background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-footer__icon:hover,
-.social-footer__icon:focus,
-.social-footer__icon:active {
-  fill: var(--title-color);
-  background-color: var(--accent-color);
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--title-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    --color5: var(--background-social);
+    --color4: var(--title-color);
+    transition: fill background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      fill: var(--title-color);
+      background-color: var(--accent-color);
+    }
+  }
 }

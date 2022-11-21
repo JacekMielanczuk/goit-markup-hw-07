@@ -780,7 +780,6 @@ textarea::placeholder {
   padding-left: 0;
   list-style-type: none;
 }
-
 .social-footer__link {
   display: flex;
   width: 44px;
@@ -791,7 +790,6 @@ textarea::placeholder {
   align-items: center;
   justify-content: center;
 }
-
 .social-footer__icon {
   width: 44px;
   height: 44px;
@@ -802,10 +800,7 @@ textarea::placeholder {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-footer__icon:hover,
-.social-footer__icon:focus,
-.social-footer__icon:active {
+.social-footer__icon:hover, .social-footer__icon:focus, .social-footer__icon:active {
   fill: var(--title-color);
   background-color: var(--accent-color);
 }
