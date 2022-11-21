@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   padding-bottom: 94px;
   list-style-type: none;
+  padding-left: 0;
+  justify-content: space-between;
 }
 .project__name {
   font-weight: 700;
@@ -53,9 +55,7 @@
   margin: auto;
   width: 301px;
 }
-.project__item {
-  flex-basis: calc((100% - 60px) / 3);
-}
+
 .project__type {
   font-weight: 400;
   font-size: 16px;
