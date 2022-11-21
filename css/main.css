@@ -737,6 +737,15 @@ textarea::placeholder {
   color: var(--accent-color);
 }
 
+.mail--underline {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .social-padding {
   padding-top: 72px;
   padding-left: 70px;
