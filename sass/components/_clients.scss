@@ -14,9 +14,10 @@
   transition: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.client-list__client:hover,
-.client-list__client:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
