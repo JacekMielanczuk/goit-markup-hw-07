@@ -918,6 +918,8 @@ textarea::placeholder {
   flex-wrap: wrap;
   padding-bottom: 94px;
   list-style-type: none;
+  padding-left: 0;
+  justify-content: space-between;
 }
 
 .project__name {
@@ -974,10 +976,6 @@ textarea::placeholder {
   color: var(--title-color);
   margin: auto;
   width: 301px;
-}
-
-.project__item {
-  flex-basis: calc((100% - 60px) / 3);
 }
 
 .project__type {
