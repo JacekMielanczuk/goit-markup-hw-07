@@ -583,7 +583,6 @@ textarea::placeholder {
   margin-bottom: 0px;
   list-style-type: none;
 }
-
 .members__description {
   font-weight: 400;
   font-size: 16px;
@@ -599,7 +598,6 @@ textarea::placeholder {
   gap: 10px;
   border-radius: 0px 0px 4px 4px;
 }
-
 .members__name {
   font-weight: 500;
   font-size: 16px;
@@ -618,15 +616,17 @@ textarea::placeholder {
   padding-right: 32px;
   list-style-type: none;
 }
-
 .social-list__link {
-  /* display: flex;
-    width: 44px;
-    height: 44px;
-
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center; */
+  transition: fill background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__icon {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  background-color: var(--title-color);
+  border-radius: 50%;
   transition: fill background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -637,17 +637,6 @@ textarea::placeholder {
 .social-list__link:active .social-list__icon {
   fill: var(--title-color);
   background-color: var(--accent-color);
-}
-
-.social-list__icon {
-  width: 44px;
-  height: 44px;
-  fill: #afb1b8;
-  background-color: var(--title-color);
-  border-radius: 50%;
-  transition: fill background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list {
