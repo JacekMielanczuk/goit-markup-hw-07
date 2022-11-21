@@ -7,28 +7,29 @@
   border-radius: 4px;
   margin: auto;
   padding: 8px;
-}
-.modal__btn {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  margin-left: 93%;
+
+  &__btn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-left: 93%;
+  }
+  &__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2px;
+    color: var(--main-color);
+  }
 }
 
-.modal__title {
-  display: flex;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-align: center;
-  justify-content: center;
-  margin-top: 2px;
-  color: var(--main-color);
-}
 .modal-content {
   display: flex;
   justify-content: center;
@@ -38,64 +39,67 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-}
-.main-form__fieldset {
-  display: flex;
-  position: relative;
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding-block: 7px;
-  margin-bottom: 28px;
-  transition: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.main-form__fieldset:has(input:focus) {
-  border-color: var(--accent-color);
-}
-.main-form__fieldset:has(input:focus) .main-form__icon--name {
-  fill: var(--accent-color);
-}
-.main-form__fieldset:has(input:focus) .main-form__icon--tel {
-  fill: var(--accent-color);
-}
-.main-form__fieldset:has(input:focus) .main-form__icon--mail {
-  fill: var(--accent-color);
-}
-.main-form__label {
-  position: absolute;
-  top: -18px;
-  left: 0px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--descriptions-color);
-}
-.main-form__icon {
-  text-align: center;
-  margin-block: 5px;
-  margin-right: 12px;
-  transition: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__fieldset {
+    display: flex;
+    position: relative;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-block: 7px;
+    margin-bottom: 28px;
+    transition: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:has(input:focus) {
+      border-color: var(--accent-color);
+    }
+    &:has(input:focus) .main-form__icon--name {
+      fill: var(--accent-color);
+    }
+    &:has(input:focus) .main-form__icon--tel {
+      fill: var(--accent-color);
+    }
+    &:has(input:focus) .main-form__icon--mail {
+      fill: var(--accent-color);
+    }
+  }
+  &__label {
+    position: absolute;
+    top: -18px;
+    left: 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--descriptions-color);
+  }
+  &__icon {
+    text-align: center;
+    margin-block: 5px;
+    margin-right: 12px;
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--name {
+      width: 12px;
+      height: 12px;
+    }
+
+    &--tel {
+      width: 13px;
+      height: 13px;
+    }
+    &--mail {
+      width: 15px;
+      height: 12px;
+    }
+  }
 }
 
-.main-form__icon--name {
-  width: 12px;
-  height: 12px;
-}
-
-.main-form__icon--tel {
-  width: 13px;
-  height: 13px;
-}
-.main-form__icon--mail {
-  width: 15px;
-  height: 12px;
-}
 .main-form__input {
   border: 0;
   outline: 0;
@@ -114,9 +118,10 @@
   transition: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.main-form__fieldset-two:has(textarea:focus) {
-  border-color: var(--accent-color);
+
+  &:has(textarea:focus) {
+    border-color: var(--accent-color);
+  }
 }
 .main-form__textarea {
   width: 100%;
@@ -125,13 +130,14 @@
   border: 0;
   resize: none;
   outline: 0;
-}
-textarea::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .legal {
   position: relative;
@@ -143,46 +149,48 @@ textarea::placeholder {
   color: var(--descriptions-color);
   cursor: pointer;
   padding-left: 6px;
+
+  &__span {
+    color: rgba(33, 150, 243, 1);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+  &__basic {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    left: -2px;
+    top: 4px;
+    opacity: 1;
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__check {
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    left: -3px;
+    top: 3px;
+    opacity: 0;
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
 .legal input {
   cursor: pointer;
   opacity: 0;
+
+  &:checked ~ .legal__basic {
+    opacity: 0;
+  }
+  &:checked ~ .legal__check {
+    opacity: 1;
+  }
 }
 
-.legal__span {
-  color: rgba(33, 150, 243, 1);
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-}
-.legal__basic {
-  width: 16px;
-  height: 15px;
-  position: absolute;
-  left: -2px;
-  top: 4px;
-  opacity: 1;
-  transition: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.legal__check {
-  width: 17px;
-  height: 16px;
-  position: absolute;
-  left: -3px;
-  top: 3px;
-  opacity: 0;
-  transition: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.legal input:checked ~ .legal__basic {
-  opacity: 0;
-}
-.legal input:checked ~ .legal__check {
-  opacity: 1;
-}
 .submit {
   font-weight: 700;
   font-size: 16px;

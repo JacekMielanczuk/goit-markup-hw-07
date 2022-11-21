@@ -270,7 +270,6 @@ body {
   margin: auto;
   padding: 8px;
 }
-
 .modal__btn {
   cursor: pointer;
   width: 30px;
@@ -280,7 +279,6 @@ body {
   background-color: #ffffff;
   margin-left: 93%;
 }
-
 .modal__title {
   display: flex;
   font-weight: 700;
@@ -304,7 +302,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .main-form__fieldset {
   display: flex;
   position: relative;
@@ -318,23 +315,18 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .main-form__fieldset:has(input:focus) {
   border-color: var(--accent-color);
 }
-
 .main-form__fieldset:has(input:focus) .main-form__icon--name {
   fill: var(--accent-color);
 }
-
 .main-form__fieldset:has(input:focus) .main-form__icon--tel {
   fill: var(--accent-color);
 }
-
 .main-form__fieldset:has(input:focus) .main-form__icon--mail {
   fill: var(--accent-color);
 }
-
 .main-form__label {
   position: absolute;
   top: -18px;
@@ -345,7 +337,6 @@ body {
   letter-spacing: 0.01em;
   color: var(--descriptions-color);
 }
-
 .main-form__icon {
   text-align: center;
   margin-block: 5px;
@@ -354,17 +345,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .main-form__icon--name {
   width: 12px;
   height: 12px;
 }
-
 .main-form__icon--tel {
   width: 13px;
   height: 13px;
 }
-
 .main-form__icon--mail {
   width: 15px;
   height: 12px;
@@ -390,7 +378,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .main-form__fieldset-two:has(textarea:focus) {
   border-color: var(--accent-color);
 }
@@ -403,8 +390,7 @@ body {
   resize: none;
   outline: 0;
 }
-
-textarea::placeholder {
+.main-form__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -423,18 +409,11 @@ textarea::placeholder {
   cursor: pointer;
   padding-left: 6px;
 }
-
-.legal input {
-  cursor: pointer;
-  opacity: 0;
-}
-
 .legal__span {
   color: rgb(33, 150, 243);
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
-
 .legal__basic {
   width: 16px;
   height: 15px;
@@ -446,7 +425,6 @@ textarea::placeholder {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .legal__check {
   width: 17px;
   height: 16px;
@@ -459,10 +437,13 @@ textarea::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.legal input {
+  cursor: pointer;
+  opacity: 0;
+}
 .legal input:checked ~ .legal__basic {
   opacity: 0;
 }
-
 .legal input:checked ~ .legal__check {
   opacity: 1;
 }
