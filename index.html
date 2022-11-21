@@ -73,35 +73,52 @@
         <!-- modal -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="modal-btn" data-modal-close><span>X</span></button>
-            <h5 class="form-title">Zostaw swoje dane w formularzu poniżej</h5>
+            <button class="modal__btn" data-modal-close><span>X</span></button>
+            <h5 class="modal__title">Zostaw swoje dane w formularzu poniżej</h5>
             <div class="modal-content">
               <form class="main-form">
-                <fieldset class="fieldset">
-                  <label class="label" for="name">Imie</label>
-                  <svg class="icon-name">
+                <fieldset class="main-form__fieldset">
+                  <label class="main-form__label" for="name">Imie</label>
+                  <svg class="main-form__icon main-form__icon--name">
                     <use href="./images/icons.svg#icon-icon-person-black"></use>
                   </svg>
-                  <input class="input" type="text" name="username" id="name" />
+                  <input
+                    class="main-form__input"
+                    type="text"
+                    name="username"
+                    id="name"
+                  />
                 </fieldset>
-                <fieldset class="fieldset">
-                  <label class="label" for="phone">Telefon</label>
-                  <svg class="icon-tel">
+                <fieldset class="main-form__fieldset">
+                  <label class="main-form__label" for="phone">Telefon</label>
+                  <svg class="main-form__icon main-form__icon--tel">
                     <use href="./images/icons.svg#icon-icon-phone-black"></use>
                   </svg>
-                  <input class="input" type="tel" name="phone" id="phone" />
+                  <input
+                    class="main-form__input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                  />
                 </fieldset>
-                <fieldset class="fieldset">
-                  <label class="label" for="email">Email</label>
-                  <svg class="icon-mail">
+                <fieldset class="main-form__fieldset">
+                  <label class="main-form__label" for="email">Email</label>
+                  <svg class="main-form__icon main-form__icon--mail">
                     <use href="./images/icons.svg#icon-icon-email"></use>
                   </svg>
-                  <input class="input" type="email" name="email" id="email" />
+                  <input
+                    class="main-form__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
                 </fieldset>
-                <fieldset class="fieldset-two">
-                  <label class="label" for="comment">Komentarz</label>
+                <fieldset class="main-form__fieldset-two">
+                  <label class="main-form__label" for="comment"
+                    >Komentarz</label
+                  >
                   <textarea
-                    class="textarea"
+                    class="main-form__textarea"
                     placeholder="Wprowadź tekst"
                     name="comment"
                     id="comment"
@@ -109,12 +126,12 @@
                 </fieldset>
                 <label class="legal"
                   ><input type="checkbox" /> Oświadczam iż akceptuję
-                  <span class="legal-span">Regulamin</span> i
-                  <span class="legal-span">Politykę Prywatności</span>
-                  <svg class="basic">
+                  <span class="legal__span">Regulamin</span> i
+                  <span class="legal__span">Politykę Prywatności</span>
+                  <svg class="legal__basic">
                     <use href="./images/icons.svg#icon-icon-square"></use>
                   </svg>
-                  <svg class="check">
+                  <svg class="legal__check">
                     <use href="./images/icons.svg#icon-icon-check"></use>
                   </svg>
                 </label>
