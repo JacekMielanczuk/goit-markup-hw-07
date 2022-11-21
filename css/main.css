@@ -660,7 +660,6 @@ textarea::placeholder {
   justify-content: space-around;
   list-style-type: none;
 }
-
 .client-list__client {
   border: 1px solid #afb1b8;
   border-radius: 4%;
