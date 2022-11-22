@@ -603,10 +603,6 @@ body {
   fill: var(--accent-color);
 }
 
-.footer-background-color {
-  background-color: #2f303a;
-}
-
 .footer-flex {
   display: flex;
   align-items: flex-start;
@@ -616,6 +612,9 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+}
+.footer--background-color {
+  background-color: #2f303a;
 }
 
 .footer-logo {
