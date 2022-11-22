@@ -35,4 +35,7 @@
     letter-spacing: 0.03em;
     color: var(--descriptions-color);
   }
+  &__wrapper {
+    display: flex;
+  }
 }
