@@ -617,6 +617,17 @@ body {
   background-color: #2f303a;
 }
 
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .footer-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -682,17 +693,6 @@ body {
   padding-left: 70px;
   display: flex;
   flex-direction: column;
-}
-
-.footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  padding-bottom: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .social-footer {
